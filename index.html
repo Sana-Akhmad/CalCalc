@@ -13,129 +13,146 @@
 <body class="page">
   <main class="main">
     <article>
-    <h1>
-        Счётчик калорий
-    </h1>
-    <form class="" name="counter" action="#" method="post">
+        <h1>
+            Счётчик калорий
+        </h1>
+        <div class="container">
+            <form class="" name="counter" action="#" method="post">
+    
+                <h2>
+                    Пол
+                </h2>
+                <ul class="gender-list">
+                    <li>
+                        <label>
+                            <input type="radio" name="gender" checked>
+                            <span class="gender-list-left">Мужчина</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="gender">
+                            <span class="gender-list-right">Женщина</span>
+                        </label>
+                    </li>
+                </ul>
+    
+                <fieldset class="fisical">
+                    <legend>
+                        Физические параметры
+                    </legend>
 
-        <h2>
-            Пол
-        </h2>
-        <ul>
-            <li>
-                <input type="radio" name="gender">
-                <label>
-                    Мужчина
-                </label>
-            </li>
-            <li>
-                <input type="radio" name="gender">
-                <label>
-                    Женщина
-                </label>
-            </li>
-        </ul>
+                    <div class="fisical-col">
+                        <div>
+                            <label>Возраст</label>
+                            <span>лет</span>
+                        </div>
+                        <div>
+                            <input type="text" placeholder="0">
+                        </div>
+                    </div>
 
-        <fieldset>
-            <legend>
-                Физические параметры
-            </legend>
-            <div>
-                <label>Возраст</label>
-                <span>лет</span>
-            </div>
-            <div>
-                <input type="text">
-            </div>
-            <div>
-                <label>Рост</label>
-                <span>см</span>
-            </div>
-            <div>
-                <input type="text">
-            </div>
-            <div>
-                <label>Вес</label>
-                <span>кг</span>
-            </div>
-            <div>
-                <input type="text">
-            </div>
-        </fieldset>
-        <fieldset>
-        <legend>
-            Физическая активность
-        </legend>
-        <ul>
-            <li>
-            <div>
-                <input type="radio">
-                <label>
-                    Минимальная
-                </label>
-            </div>
-            <p>
-                Сидячая работа и нет физических нагрузок
-            </p>
-            </li>
-            <li>
-            <div>
-                <input type="radio">
-                <label>
-                    Низкая
-                </label>
-            </div>
-            <p>
-                Редкие, нерегулярные тренировки, активность в быту
-            </p>
-            </li>
-            <li>
-            <div>
-                <input type="radio">
-                <label>
-                    Средняя
-                </label>
-            </div>
-            <p>
-                Тренировки 3-5 раз в неделю
-            </p>
-            </li>
-            <li>
-            <div>
-                <input type="radio">
-                <label>
-                    Высокая
-                </label>
-            </div>
-            <p>
-                Тренировки 6-7 раз в неделю
-            </p>
-            </li>
-            <li>
-            <div>
-                <input type="radio">
-                <label>
-                    Очень высокая
-                </label>
-            </div>
-            <p>
-                Больше 6 тренировок в неделю и физическая работа
-            </p>
-            </li>
-        </ul>
-        </fieldset>
+                    <div class="fisical-col">
+                        <div>
+                            <label>Рост</label>
+                            <span>см</span>
+                        </div>
+                        <div>
+                            <input type="text" placeholder="0">
+                        </div>
+                    </div>
 
-        <button class="submit" name="submit" type="submit">
-            Рассчитать
-        </button>
-        <button class= "reset" name="reset" type="reset" disabled>
-            <span>
-                Очистить поля и расчёт
-            </span>
-        </button>
-    </form>
+                    <div class="fisical-col">
+                        <div>
+                            <label>Вес</label>
+                            <span>кг</span>
+                        </div>
+                        <div>
+                            <input type="text" placeholder="0">
+                        </div>
+                    </div>
+                </fieldset>
 
-    <section>
+                <fieldset class="activity">
+                <legend>
+                    Физическая активность
+                </legend>
+                <ul>
+                    <li>
+                    <div>
+                        <label>
+                            <input type="radio" name="activity">
+                            <span>Минимальная</spa>
+                        </label>
+                    </div>
+                    <p>
+                        Сидячая работа и нет физических нагрузок
+                    </p>
+                    </li>
+                    <li>
+                    <div>
+                        <label>
+                            <input type="radio" name="activity">
+                            <span>Низкая</span>
+                        </label>
+                    </div>
+                    <p>
+                        Редкие, нерегулярные тренировки, активность в быту
+                    </p>
+                    </li>
+                    <li>
+                    <div>
+                        <label>
+                            <input type="radio" name="activity">
+                            <span>Средняя</span>
+                        </label>
+                    </div>
+                    <p>
+                        Тренировки 3-5 раз в неделю
+                    </p>
+                    </li>
+                    <li>
+                    <div>
+                        <label>
+                            <input type="radio" name="activity">
+                            <span>Высокая</span>
+                        </label>
+                    </div>
+                    <p>
+                        Тренировки 6-7 раз в неделю
+                    </p>
+                    </li>
+                    <li>
+                    <div>
+                        <label>
+                            <input type="radio" name="activity">
+                            <span>Очень высокая</span>
+                        </label>
+                    </div>
+                    <p>
+                        Больше 6 тренировок в неделю и физическая работа
+                    </p>
+                    </li>
+                </ul>
+                </fieldset>
+    
+                <div class="buttons">
+                    <button class="submit" name="submit" type="submit" disabled>
+                        Рассчитать
+                    </button>
+                    <button class="reset" name="reset" type="reset" disabled>
+                        <span>
+                            Очистить поля и расчёт
+                        </span>
+                    </button>
+                </div>
+            </form>
+    
+        </div>
+
+    </article>
+
+    <section style="display: none">
         <h2>
             Ваша норма калорий
         </h2>
@@ -166,7 +183,7 @@
             </li>
         </ul>
     </section>
-    </article>
+    
   </main>
   <script src="js/script.js"></script>
 </body>
